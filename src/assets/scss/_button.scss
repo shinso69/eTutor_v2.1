@@ -1,0 +1,26 @@
+.btn {
+  border: none;
+  color: $white;
+  background: $primary-blue;
+  font-size: 18px;
+  text-transform: uppercase;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  @include iconChange;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.btn-transparent {
+  background: transparent;
+  border: 2px solid $primary-blue;
+  color: $primary-blue;
+
+  &:hover {
+    background: $secondary-blue;
+    color: $white;
+  }
+}

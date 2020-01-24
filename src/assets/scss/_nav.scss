@@ -1,0 +1,126 @@
+.logo {
+  z-index: 1;
+  width: 100vw;
+  padding: 20px;
+  background: $white;
+  @include cardSdw;
+  position: fixed;
+  top: 0;
+
+  h2 {
+    color: $primary-blue;
+
+    span {
+      color: $primary-orange;
+    }
+  }
+}
+
+.nav_icon {
+  z-index: 4;
+  position: fixed;
+  top: 10px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    div {
+      background-color: $primary-orange;
+    }
+  }
+
+  div {
+    width: 25px;
+    height: 3px;
+    border-radius: 5px;
+    background-color: $primary-blue;
+    @include iconChange;
+  }
+}
+
+nav {
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  right: -100vw;
+  width: 100vw;
+  height: 100vh;
+  background: $high-transparent-white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @include pannelTransition;
+
+  li {
+    text-align: center;
+    margin: 30px;
+
+    a {
+      text-transform: uppercase;
+      font-size: 24px;
+      padding: 5px 0;
+      position: relative;
+      @include iconChange;
+
+      &::before,
+      &::after {
+        content: "";
+        width: 100%;
+        height: 2px;
+        position: absolute;
+        background: $primary-orange;
+        left: 0;
+        transform: scaleX(0);
+        opacity: 0;
+        @include iconChange;
+      }
+
+      &::before {
+        top: 0;
+        transform-origin: left;
+      }
+
+      &::after {
+        bottom: 0;
+        transform-origin: right;
+      }
+
+      &:hover::before,
+      &:hover::after {
+        transform: scaleX(1);
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.nav_show {
+  nav {
+    right: 0;
+  }
+
+  .line_1 {
+    transform: rotateZ(405deg) translate(5px, 6px);
+  }
+  .line_2 {
+    opacity: 0;
+  }
+  .line_3 {
+    transform: rotateZ(-405deg) translate(6px, -7px);
+  }
+}
