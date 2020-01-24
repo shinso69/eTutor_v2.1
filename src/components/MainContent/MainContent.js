@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import FadeInSection from "./FadeInSection";
 import SliderSection from "./SliderSection";
+import Form from "./Form/Form";
 
 function MainContent() {
   const [present, setPresent] = useState(false);
@@ -94,6 +95,16 @@ function MainContent() {
             {present ? "volver" : "siguiente"}
           </button>
         </FadeInSection>
+      </article>
+
+      <article id="contact">
+        <section>
+          <h3>Ponte en Contacto..</h3>
+          <p>Aqui puedes pedir nuestra ayuda o hacernos preuntas</p>
+          <Form />
+          <br />
+          <p>Estamos a tu disposición!</p>
+        </section>
       </article>
     </main>
   );

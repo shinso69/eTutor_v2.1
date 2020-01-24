@@ -17,19 +17,19 @@ function Navbar() {
         <div className="line_3" />
       </button>
 
-      <nav>
+      <nav onClick={() => setShow(!show)}>
         <ul>
           <li>
-            <a href="#">Inicio</a>
+            <a href="#inicio">Inicio</a>
           </li>
           <li>
-            <a href="#">Conocenos</a>
+            <a href="#about">Conocenos</a>
           </li>
           <li>
-            <a href="#">Servicios</a>
+            <a href="#servicios">Servicios</a>
           </li>
           <li>
-            <a href="#">Contancto</a>
+            <a href="#contact">Contancto</a>
           </li>
         </ul>
       </nav>
