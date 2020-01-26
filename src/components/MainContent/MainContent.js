@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import FadeInSection from "./FadeInSection";
 import SliderSection from "./SliderSection";
-import Form from "./Form/Form";
+import UserForm from "./Form/UserForm";
 
 function MainContent() {
   const [present, setPresent] = useState(false);
@@ -15,6 +15,7 @@ function MainContent() {
         <section id="hero">
           <h1>Tutoria de Inglés</h1>
           <h2>No esperes mas para avanzar en Inglés</h2>
+
           <button className="btn btn-transparent">Ponte en contacto</button>
         </section>
       </article>
@@ -97,15 +98,13 @@ function MainContent() {
         </FadeInSection>
       </article>
 
-      <article id="contact">
-        <section>
-          <h3>Ponte en Contacto..</h3>
-          <p>Aqui puedes pedir nuestra ayuda o hacernos preuntas</p>
-          <Form />
-          <br />
-          <p>Estamos a tu disposición!</p>
-        </section>
-      </article>
+      <FadeInSection>
+        <article id="contact">
+          <section>
+            <UserForm />
+          </section>
+        </article>
+      </FadeInSection>
     </main>
   );
 }

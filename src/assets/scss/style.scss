@@ -108,6 +108,13 @@ article {
     flex-direction: column;
     justify-content: space-evenly;
 
+    h1 {
+      color: $primary-blue;
+      text-align: center;
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+
     h3 {
       color: $primary-orange;
       margin-bottom: 10px;
@@ -121,8 +128,45 @@ article {
 
     p:nth-last-child(1) {
       text-align: center;
-      font-weight: bold;
       color: $primary-orange;
+      transition: all 0.8s ease-in;
+    }
+
+    #standad-basic {
+      color: $primary-blue !important;
+      font-size: 14px !important;
+    }
+
+    #standad-basic-label {
+      color: $primary-orange !important;
+    }
+
+    .MuiListItem-root {
+      color: $primary-blue !important;
+    }
+
+    #standad-multiline-flexible {
+      color: $primary-orange !important;
+      font-size: 14px !important;
+    }
+
+    #standad-multiline-flexible-label {
+      color: $primary-orange !important;
+    }
+
+    .MuiInput-underline:before {
+      border-bottom: 1px solid $primary-blue !important;
+    }
+
+    .MuiTypography-root {
+      text-align: left !important;
+    }
+
+    form {
+      button {
+        width: 100%;
+        margin-top: 30px;
+      }
     }
   }
 }

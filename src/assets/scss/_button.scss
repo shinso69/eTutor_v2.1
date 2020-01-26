@@ -23,4 +23,24 @@
     background: $secondary-blue;
     color: $white;
   }
+
+  &:disabled {
+    opacity: 0.3;
+    cursor: unset;
+    pointer-events: none;
+
+    &:hover {
+      background: transparent;
+    }
+  }
+}
+
+.btn-form {
+  display: inline-block;
+  border: 2px solid $primary-orange;
+  color: $primary-orange;
+
+  &:hover {
+    background: $secondary-orange;
+  }
 }
