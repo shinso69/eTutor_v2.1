@@ -171,6 +171,21 @@ article {
   }
 }
 
+footer {
+  width: 100vw;
+  height: 50px;
+  text-align: center;
+  background: $secondary-blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  h3 {
+    color: $white;
+    font-weight: normal;
+  }
+}
+
 // @for $x from 1 through 4 {
 //   .nav_show li:nth-child(#{$x}) {
 //     transition-delay: $x * 0.1s;

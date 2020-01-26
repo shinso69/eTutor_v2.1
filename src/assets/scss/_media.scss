@@ -1,0 +1,23 @@
+@include mediaLg {
+  #servicios {
+    .present {
+      section {
+        width: 90% !important;
+      }
+    }
+  }
+
+  section {
+    width: 50% !important;
+
+    button {
+      width: 50% !important;
+    }
+  }
+}
+
+@include mediaXl {
+  section {
+    width: 30% !important;
+  }
+}

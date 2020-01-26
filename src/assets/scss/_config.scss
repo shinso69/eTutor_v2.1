@@ -50,3 +50,23 @@ body {
 @mixin iconChange {
   transition: all 0.5s ease-out;
 }
+
+// Media queries
+
+@mixin mediaSm {
+  @media screen and (max-width: 412) {
+    @content;
+  }
+}
+
+@mixin mediaLg {
+  @media screen and (min-width: 769px) {
+    @content;
+  }
+}
+
+@mixin mediaXl {
+  @media screen and (min-width: 1281px) {
+    @content;
+  }
+}
